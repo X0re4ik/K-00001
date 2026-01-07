@@ -1,9 +1,9 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: ingress.simple.app
+  name: ingress-simple-app
   labels:
-    app.kubernetes.io/name: ingress.simple.app
+    app.kubernetes.io/name: ingress-simple-app
 spec:
   rules:
     - http:
@@ -12,6 +12,6 @@ spec:
             path: "/"
             backend:
               service:
-                name: service.clusterip.simple.app
+                name: service-clusterip-simple-app
                 port:
                   number: 80

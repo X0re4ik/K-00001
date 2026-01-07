@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: service.clusterip.simple.app
+  name: service-clusterip-simple-app
 spec:
   selector:
-    name: deployment.simple.app
+    name: deployment-simple-app
   type: ClusterIP
   ports:
     - port: 80
