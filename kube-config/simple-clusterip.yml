@@ -4,7 +4,7 @@ metadata:
   name: service-clusterip-simple-app
 spec:
   selector:
-    name: deployment-simple-app
+    app.kubernetes.io/components: simple-pod
   type: ClusterIP
   ports:
     - port: 80
