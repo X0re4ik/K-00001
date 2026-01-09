@@ -2,6 +2,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: ingress-simple-app
+  namespace: test
   labels:
     app.kubernetes.io/name: ingress-simple-app
 spec:
